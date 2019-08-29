@@ -40,10 +40,10 @@
     <div>
 
             <table class="job-listing" th:each="job : ${jobs}">
-                <tr th:each="field : ${job}">
+                <tr th:each="mapItem : ${job}">
 
-                    <td th:text="${field.key}">Key</td>
-                    <td th:text="${field.value}">Value</td>
+                    <td th:text="${mapItem.key}">Key</td>
+                    <td th:text="${mapItem.value}">Value</td>
                 </tr>
             </table>
 
